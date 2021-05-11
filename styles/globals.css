@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Generics */
+
+body {
+  background-color: rgba(17, 24, 39);
+}
+
+input {
+  color: black;
+  border-radius: 5px;
+}
+
+/* Custom classes */
+
+.marker-active {
+  z-index: 1;
+}

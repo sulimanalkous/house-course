@@ -3984,10 +3984,10 @@
   "resolved" "https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz"
   "version" "1.0.0"
 
-"nanoid@^3.1.22":
-  "integrity" "sha512-/2ZUaJX2ANuLtTvqTlgqBQNJoQO398KyJgZloL0PZkC0dpysjncRUPsFe3DUPzz/y3h+u7C46np8RMuvF3jsSQ=="
-  "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.1.22.tgz"
-  "version" "3.1.22"
+"nanoid@^3.1.22", "nanoid@^3.1.23":
+  "integrity" "sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw=="
+  "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.1.23.tgz"
+  "version" "3.1.23"
 
 "native-url@0.3.4":
   "integrity" "sha512-6iM8R99ze45ivyH8vybJ7X0yekIcPf5GgLV5K0ENCbmRcaRIDoj37BC8iLEmaaBfqqb8enuZ5p0uhY+lVAbAcA=="
@@ -4735,13 +4735,13 @@
     "source-map" "^0.6.1"
     "supports-color" "^5.4.0"
 
-"postcss@^8.0.0", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.13", "postcss@^8.1.4", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.14", "postcss@^8.2.2":
-  "integrity" "sha512-+jD0ZijcvyCqPQo/m/CW0UcARpdFylq04of+Q7RKX6f/Tu+dvpUI/9Sp81+i6/vJThnOBX09Quw0ZLOVwpzX3w=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.14.tgz"
-  "version" "8.2.14"
+"postcss@^8.0.0", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.1.13", "postcss@^8.1.4", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.15", "postcss@^8.2.2":
+  "integrity" "sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.15.tgz"
+  "version" "8.2.15"
   dependencies:
     "colorette" "^1.2.2"
-    "nanoid" "^3.1.22"
+    "nanoid" "^3.1.23"
     "source-map" "^0.6.1"
 
 "postcss@8.2.13":
