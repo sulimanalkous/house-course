@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { SearchBox } from "./searchBox";
 
 interface IFormData {
   address: string;
@@ -12,7 +13,7 @@ interface IFormData {
 interface IProps {}
 
 export default function HouseForm({}: IProps) {
-  const [submiting, setSubmiting] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
@@ -20,6 +21,7 @@ export default function HouseForm({}: IProps) {
     watch,
     formState: { errors },
   } = useForm<IFormData>({ defaultValues: {} });
+  const address = watch("address");
 
   useEffect(() => {
     register("address", { required: "Please enter your address" });
@@ -30,19 +32,27 @@ export default function HouseForm({}: IProps) {
   const handleCreate = async (data: IFormData) => {};
 
   const onSubmit = (data: IFormData) => {
-    setSubmiting(true);
+    setSubmitting(true);
     handleCreate(data);
   };
   return (
-    <form className="mx-auto max-w-xl py-4" onSubmit={handleSubmit(onSubmit)}>
+    <form className="max-w-xl py-4 mx-auto" onSubmit={handleSubmit(onSubmit)}>
       <h1 className="text-xl">Add a New House</h1>
 
       <div className="mt-4">
         <label htmlFor="search" className="block">
           Search for your address
         </label>
-        {/*SEARCH FIELD*/}
+        <SearchBox
+          onSelectAddress={(address, latitude, longitude) => {
+            setValue("address", address);
+            setValue("latitude", latitude);
+            setValue("longitude", longitude);
+          }}
+          defaultValue=""
+        />
         {errors.address && <p>{errors.address.message}</p>}
+        <h2>{address}</h2>
       </div>
     </form>
   );
